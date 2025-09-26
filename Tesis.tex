@@ -1,0 +1,82 @@
+% Template LaTeX Tesis Ciencia de la Computación UCSP
+% 2022
+
+\documentclass[a4paper,openany,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[spanish,mexico]{babel}
+% custom style files are in the project's sty/ folder
+\usepackage{sty/fancyhdr}
+\usepackage{ae}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=2cm]{geometry}
+\usepackage[printonlyused]{acronym}
+\usepackage{xspace}
+\usepackage{sty/hlundef}
+\usepackage{sty/tesis}
+\usepackage{setspace}
+\usepackage{booktabs}
+% removed an empty \usepackage{} which caused a LaTeX error
+
+\title{** Título de la Tesis **}
+\title{Una Estructura de Datos para la Consulta Visual Interactiva por Similitud de Grandes Volúmenes de Datos Multidimensionales Mixtos Georeferenciados}
+
+\author{** Nombre completo del tesista **}
+
+
+\advisor{** Dr./Mg. Nombre completo del Asesor **}
+
+
+\date{** Arequipa, Mes Año **}
+
+%\examinerone{Prof. Dr. Hidalgo Buena Gente}{Presidente}%
+%\examinertwo{Prof. Dr. Antero A. Gal Oppe}{Secretario}%
+%\examinerthree{Prof. Dr. Liu Xiao Ling}{University of ...} % of being the case
+
+\dedicado{Aquí deberás colocar a quien va dedicada tu tesis por ejemplo: A Dios, por todo lo que me ha dado, a todos los profesores por sus enseñanzas y algunos amigos.}
+
+\begin{document}
+\pagestyle{fancy}
+
+\maketitle %Compone la carátula y la dedicatoria
+\newpage
+
+%\approved{\tres}%  {\tres} or {\cuatro}
+
+% Front matter is located in frontmatter/ folder
+% use \input so aux files are written alongside the main document
+\input{frontmatter/abreviaturas}
+
+\input{frontmatter/Agradecimientos} %Inserta los agradecimientos
+\input{frontmatter/Resumen} %Inserta el resumen
+\input{frontmatter/Abstract} %Inserta el abstract
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\pagestyle{plain}
+
+\tableofcontents %Inserta el índice general
+\listoftables %Inserta el índice de cuadros
+\listoffigures %Inserta el índice de figuras
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%   En esta parte deberas incluir los archivos de tu tesis   %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{plain}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+% chapters are in the chapters/ folder
+\input{chapters/Cap_1} %Inserta el capítulo 1
+\input{chapters/Cap_2} %Inserta el capítulo 2
+\input{chapters/Cap_3} %Inserta el capítulo 3
+\input{chapters/Cap_4} %Inserta el capítulo 4
+\input{chapters/conclusiones} %Inserta el capítulo 5
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{apalike}
+
+% bibliography file is in the bibliography/ directory
+\bibliography{bibliography/Bibliog}
+\addcontentsline{toc}{chapter}{Bibliografía}
+\end{document}

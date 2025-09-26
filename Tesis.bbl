@@ -1,0 +1,21 @@
+\begin{thebibliography}{}
+
+\bibitem[Choset and Nagatani, 2001]{Choset_2001}
+Choset, H. and Nagatani, K. (2001).
+\newblock Topological simultaneous localization and mapping (slam): toward
+  exact localization without explicit localization.
+\newblock {\em IEEE Transactions on Robotics and Automation}, 17(2):125--137.
+
+\bibitem[Galante, 2001]{Galante01}
+Galante, R. (2001).
+\newblock {\em Evolución de Esquemas en Bancos de Datos Orientados a Objetos
+  con el empleo de versiones}.
+\newblock PhD thesis, Instituto de Informática-UFRGS.
+
+\bibitem[Mateos et~al., 2000]{Mateos00}
+Mateos, G., García, M., and Ortín, M. (2000).
+\newblock Inclusión de vistas en odmg.
+\newblock {\em Jornadas de Ingeniería del Software y Bases de Datos (JISBD
+  2000)}, pages 383--395.
+
+\end{thebibliography}
