@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.22)  25 SEP 2025 23:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.22)  26 SEP 2025 00:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**g:/Mark/UCSP/2025-2/PFC-II/paper/Tesis_CS_202203/Tesis.tex
-(g:/Mark/UCSP/2025-2/PFC-II/paper/Tesis_CS_202203/Tesis.tex
+**g:/Mark/UCSP/2025-2/PFC-II/paper/tesis_2025/Tesis.tex
+(g:/Mark/UCSP/2025-2/PFC-II/paper/tesis_2025/Tesis.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
 (C:\Program Files\MiKTeX\tex/latex/base\book.cls
@@ -148,12 +148,8 @@ File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 ) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count284
-) (Tesis.aux
-LaTeX Info: Redefining \. on input line 6.
-LaTeX Info: Redefining \% on input line 6.
-Package babel Info: 'spanish' activates 'spanish' shorthands.
-(babel)             Reported  on input line 6.
 )
+No file Tesis.aux.
 \openout1 = `Tesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
@@ -170,7 +166,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
- (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count285
 \scratchdimen=\dimen172
@@ -191,6 +187,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Info: Redefining \. on input line 37.
 LaTeX Info: Redefining \% on input line 37.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported  on input line 37.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -277,10 +275,8 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 [6
 
 
-]) (Tesis.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
+])
+No file Tesis.toc.
 \tf@toc=\write3
 \openout3 = `Tesis.toc'.
 
@@ -301,10 +297,8 @@ LaTeX Font Warning: Font shape `T1/aer/m/scsl' undefined
 [1
 
 
-] (Tesis.lot
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
+]
+No file Tesis.lot.
 \tf@lot=\write4
 \openout4 = `Tesis.lot'.
 
@@ -324,14 +318,12 @@ LaTeX Font Warning: Font shape `T1/aer/m/scsl' undefined
 
 [2
 
-] (Tesis.lof
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-)
+]
+No file Tesis.lof.
 \tf@lof=\write5
 \openout5 = `Tesis.lof'.
 
- (chapters/Cap_1.tex
+(chapters/Cap_1.tex
 
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
@@ -342,6 +334,20 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 Cap\'{\i }tulo 1.
 Package acronym Info: Label `acro:CMM' newly defined as it shall be overridden
 although it is yet undefined on input line 3.
+
+Package acronym Warning: Acronym CMM is not defined on input line 3.
+
+
+Package acronym Warning: Acronym CMM is not defined on input line 3.
+
+
+Package acronym Warning: Acronym CMM is not defined on input line 3.
+
+
+Overfull \hbox (33.28833pt too wide) in paragraph at lines 3--4
+\T1/aer/m/n/12 su ma-nual dis-po-ni-ble en: $\OML/cmm/m/it/12 http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==www:ctan:org=tex \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 archive=macros=latex=contrib=acronym=$ 
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -359,10 +365,26 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [3]
 Cap\'{\i }tulo 2.
+line:10:
 
-Overfull \hbox (54.83739pt too wide) in paragraph at lines 10--11
-[]\T1/aer/m/n/12 Con res-pec-to a las re-fe-ren-cias bi-blio-gr�-fi-cas, se ha-ce de la si-guien-te ma-ne-ra [[]],
+Tesis.tex:10: LaTeX Warning: Citation `Mateos00' on page 4 undefined on input line 10.
+
+
+Overfull \hbox (9.00604pt too wide) in paragraph at lines 10--11
+[]\T1/aer/m/n/12 Con res-pec-to a las re-fe-ren-cias bi-blio-gr�-fi-cas, se ha-ce de la si-guien-te ma-ne-ra [[][]],
  []
+
+line:13:
+
+Tesis.tex:13: LaTeX Warning: Citation `Choset_2001' on page 4 undefined on input line 13.
+
+line:15:
+
+Tesis.tex:15: LaTeX Warning: Reference `Fig:SLAMTopological' on page 4 undefined on input line 15.
+
+line:28:
+
+Tesis.tex:28: LaTeX Warning: Citation `Galante01' on page 4 undefined on input line 28.
 
 
 
@@ -378,7 +400,7 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [5]
 Cap\'{\i }tulo 3.
-) (chapters/Cap_4.tex
+
 
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
@@ -387,7 +409,79 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
 ]
 Cap\'{\i }tulo 4.
-) (chapters/conclusiones.tex
+
+Overfull \hbox (40.61798pt too wide) in paragraph at lines 16--17
+[]\T1/aer/m/n/12 En es-te ca-p�-tu-lo se pre-sen-ta un an�-li-sis exhaus-ti-vo del es-ta-do del ar-te en \T1/aer/m/it/12 Retrieval[]Augmented
+ []
+
+line:20:
+
+Tesis.tex:20: LaTeX Warning: Citation `pinecone2025guide' on page 7 undefined on input line 20.
+
+
+chapters/Cap_3.tex:20: Tesis.tex:20: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...e erosiona la confianza de los usuarios【
+                                                  916670030940373†L32-L92�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    Trying to load font information for TS1+aer on input line 20.
+LaTeX Font Info:    No file TS1aer.fd. on input line 20.
+
+LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
+(Font)              using `TS1/cmr/m/n' instead
+(Font)              for symbol `textdagger' on input line 20.
+
+
+chapters/Cap_3.tex:20: Tesis.tex:20: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 ...os usuarios【916670030940373†L32-L92】
+                                                  .  Estas limitaciones just...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+line:24:
+
+Tesis.tex:24: LaTeX Warning: Citation `singlestore2025tutorial' on page 7 undefined on input line 24.
+
+
+chapters/Cap_3.tex:24: Tesis.tex:24: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ... el LLM utilizando el contexto aportado【
+                                                  916670030940373†L118-L13...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:24: Tesis.tex:24: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 ... aportado【916670030940373†L118-L133】
+                                                  .  Este flujo permite prop...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
 
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
@@ -395,20 +489,1055 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
  [7
 
 ]
+line:28:
+
+Tesis.tex:28: LaTeX Warning: Citation `sharma2025survey' on page 8 undefined on input line 28.
+
+
+chapters/Cap_3.tex:28: Tesis.tex:28: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...ra equilibrar precisión y flexibilidad【
+                                                  589007710703999†L74-L93�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:28: Tesis.tex:28: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...lexibilidad【589007710703999†L74-L93】
+                                                  .  El estudio también rev...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:28: Tesis.tex:28: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ... de seguridad ante entradas adversarias【
+                                                  589007710703999†L960-L98...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:28: Tesis.tex:28: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 ...versarias【589007710703999†L960-L981】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (28.26888pt too wide) in paragraph at lines 28--29
+\T1/aer/m/n/12 flexibilidad589007710703999\TS1/aer/m/n/12 �\T1/aer/m/n/12 L74-L93. El es-tu-dio tam-bi�n re-vi-sa avan-ces co-mo la re[]clasificaci�n
+ []
+
+
+chapters/Cap_3.tex:30: Tesis.tex:30: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...tral}, \textit{Gemini} y \textit{Gemma}【
+                                                  589007710703999†L1016-L1...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:30: Tesis.tex:30: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...{Gemma}【589007710703999†L1016-L1020】
+                                                  .  Esta diversidad muestra...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:37: Tesis.tex:37: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...como coincidencias exactas de términos【
+                                                  916670030940373†L238-L25...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:37: Tesis.tex:37: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...términos【916670030940373†L238-L250】
+                                                  .  Asimismo, se aplican fi...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:38: Tesis.tex:38: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...devolver los fragmentos más relevantes【
+                                                  916670030940373†L246-L25...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:38: Tesis.tex:38: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...elevantes【916670030940373†L246-L251】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (27.35597pt too wide) in paragraph at lines 38--39
+\T1/aer/m/n/12 si-mi-la-res) que asig-nan un pun-ta-je de si-mi-li-tud m�s pre-ci-so a ca-da par consulta[]documento.
+ []
+
+
+Overfull \hbox (49.81972pt too wide) in paragraph at lines 38--39
+\T1/aer/m/n/12 b�s-que-da den-sa y dis-per-sa pa-ra de-vol-ver los frag-men-tos m�s relevantes916670030940373\TS1/aer/m/n/12 �\T1/aer/m/n/12 L246-
+ []
+
+line:39:
+
+Tesis.tex:39: LaTeX Warning: Citation `sharma2025survey' on page 8 undefined on input line 39.
+
+
+chapters/Cap_3.tex:39: Tesis.tex:39: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ... seguridad frente a ataques adversarios【
+                                                  589007710703999†L960-L98...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:39: Tesis.tex:39: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 ...versarios【589007710703999†L960-L981】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+
+
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+ [8]
+
+chapters/Cap_3.tex:44: Tesis.tex:44: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...los de lenguaje localmente mediante GPU【
+                                                  246311036369843†L87-L96�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:44: Tesis.tex:44: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...ediante GPU【246311036369843†L87-L96】
+                                                  .  El autor narra cómo em...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:44: Tesis.tex:44: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ... Markdown almacenadas en su computadora【
+                                                  246311036369843†L104-L11...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:44: Tesis.tex:44: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...mputadora【246311036369843†L104-L110】
+                                                  .  Para preparar la base d...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+LaTeX Font Info:    Trying to load font information for T1+aett on input line 44.
+(C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/ae\t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+
+chapters/Cap_3.tex:44: Tesis.tex:44: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...datos en una base vectorial como Chroma【
+                                                  246311036369843†L204-L22...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:44: Tesis.tex:44: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...mo Chroma【246311036369843†L204-L225】
+                                                  .  Una vez indexados los v...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...�n pueda concentrarse en el caso de uso【
+                                                  430126204644756†L53-L62�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...caso de uso【430126204644756†L53-L62】
+                                                  .  Este enfoque acelera la...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...ivo para equipos con recursos limitados【
+                                                  430126204644756†L82-L99�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...s limitados【430126204644756†L82-L99】
+                                                  .  No obstante, el autor a...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...ngs o la afinación de los re‑rankers【
+                                                  430126204644756†L68-L76�...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...e‑rankers【430126204644756†L68-L76】
+                                                  .  RAGaaS puede funcionar ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...ne optar por una implementación propia【
+                                                  430126204644756†L106-L11...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...�n propia【430126204644756†L106-L114】
+                                                  .  La página de Microsoft...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...beddings y consideraciones de seguridad【
+                                                  316064638127775†L56-L78】.
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:48: Tesis.tex:48: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 ...e seguridad【316064638127775†L56-L78】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+line:52:
+
+Tesis.tex:52: LaTeX Warning: Citation `designveloper2025frameworks' on page 9 undefined on input line 52.
+
+line:52:
+
+Tesis.tex:52: LaTeX Warning: Citation `langcopilot2025guide' on page 9 undefined on input line 52.
+
+
+Underfull \vbox (badness 1314) has occurred while \output is active []
+
+
+
+
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+ [9]
+
+chapters/Cap_3.tex:56: Tesis.tex:56: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...Face gracias a su arquitectura flexible【
+                                                  149667013130509†L319-L34...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:56: Tesis.tex:56: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ... flexible【149667013130509†L319-L343】
+                                                  .  Incluye componentes pre...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:56: Tesis.tex:56: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...y herramientas de trazado y evaluación【
+                                                  149667013130509†L344-L35...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:56: Tesis.tex:56: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...aluación【149667013130509†L344-L352】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:60: Tesis.tex:60: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...ra resolver las complejidades técnicas【
+                                                  149667013130509†L359-L37...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:60: Tesis.tex:60: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...técnicas【149667013130509†L359-L376】
+                                                  .  Sus componentes incluye...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:60: Tesis.tex:60: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ... y utilidades de ingeniería de prompts【
+                                                  149667013130509†L366-L37...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:60: Tesis.tex:60: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...e prompts【149667013130509†L366-L371】
+                                                  .  Las cadenas son secuenc...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:60: Tesis.tex:60: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ...�n, orquestación y despliegue a escala【
+                                                  149667013130509†L383-L38...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:60: Tesis.tex:60: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 ... a escala【149667013130509†L383-L387】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:64: Tesis.tex:64: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...e embedding, carga, indexado y consulta【
+                                                  149667013130509†L393-L40...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:64: Tesis.tex:64: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ... consulta【149667013130509†L393-L401】
+                                                  .  Aunque su foco principa...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:64: Tesis.tex:64: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...s estructurados de documentos complejos【
+                                                  149667013130509†L401-L41...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:64: Tesis.tex:64: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...complejos【149667013130509†L401-L415】
+                                                  .  También ofrece funcion...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:64: Tesis.tex:64: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...mientas de evaluación y observabilidad【
+                                                  149667013130509†L407-L41...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:64: Tesis.tex:64: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64 ...vabilidad【149667013130509†L407-L410】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:68: Tesis.tex:68: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...d entre rendimiento, coste y privacidad【
+                                                  149667013130509†L422-L44...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:68: Tesis.tex:68: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...rivacidad【149667013130509†L422-L440】
+                                                  .  Dispone de un editor vi...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:68: Tesis.tex:68: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ...paso mediante integración con Langfuse【
+                                                  149667013130509†L430-L43...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:68: Tesis.tex:68: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68 ... Langfuse【149667013130509†L430-L439】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Underfull \vbox (badness 2165) has occurred while \output is active []
+
+
+
+
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+ [10]
+
+chapters/Cap_3.tex:72: Tesis.tex:72: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...porta grafos y estructuras relacionales【
+                                                  149667013130509†L446-L45...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:72: Tesis.tex:72: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...acionales【149667013130509†L446-L453】
+                                                  .  Sus principales ventaja...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:72: Tesis.tex:72: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...cal y escalable utilizando contenedores【
+                                                  149667013130509†L446-L46...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:72: Tesis.tex:72: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 ...tenedores【149667013130509†L446-L465】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:76: Tesis.tex:76: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ...y escalar los recursos automáticamente【
+                                                  149667013130509†L472-L48...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:76: Tesis.tex:76: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 ...ticamente【149667013130509†L472-L489】
+                                                  .  Su arquitectura modular...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:80: Tesis.tex:80: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 ...os en servicios accesibles mediante MCP【
+                                                  149667013130509†L496-L50...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:80: Tesis.tex:80: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 ...iante MCP【149667013130509†L496-L501】
+                                                  .  Permite integrar modelo...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:80: Tesis.tex:80: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 ...lugins} (Slack, QRCode, xAI, AWS, etc.)【
+                                                  149667013130509†L503-L50...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:80: Tesis.tex:80: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 ...WS, etc.)【149667013130509†L503-L507】
+                                                  .  Además, soporta capaci...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (20.02487pt too wide) in paragraph at lines 80--81
+\T1/aer/m/n/12 trans-for-ma los flu-jos cons-trui-dos en ser-vi-cios ac-ce-si-bles me-dian-te MCP149667013130509\TS1/aer/m/n/12 �\T1/aer/m/n/12 L496-
+ []
+
+
+chapters/Cap_3.tex:84: Tesis.tex:84: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ... largos y las integraciones disponibles【
+                                                  149667013130509†L518-L53...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:84: Tesis.tex:84: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ...sponibles【149667013130509†L518-L538】
+                                                  .  Por ejemplo, Haystack y...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:84: Tesis.tex:84: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ...pacidad de procesar documentos extensos【
+                                                  149667013130509†L595-L59...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:84: Tesis.tex:84: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 ... extensos【149667013130509†L595-L599】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Underfull \vbox (badness 2245) has occurred while \output is active []
+
+
+
+
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+ [11]
+
+chapters/Cap_3.tex:88: Tesis.tex:88: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...nsulta y el documento de forma conjunta【
+                                                  916670030940373†L246-L25...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:88: Tesis.tex:88: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ... conjunta【916670030940373†L246-L251】
+                                                  .  Las bases vectoriales m...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:88: Tesis.tex:88: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ... y los índices en su propia estructura【
+                                                  246311036369843†L218-L22...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:88: Tesis.tex:88: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...structura【246311036369843†L218-L225】
+                                                  .  Para la generación, el...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:88: Tesis.tex:88: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...ilares) o a través de APIs comerciales【
+                                                  589007710703999†L1016-L1...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:88: Tesis.tex:88: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 ...rciales【589007710703999†L1016-L1020】
+                                                  .
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+Overfull \hbox (98.99648pt too wide) in paragraph at lines 88--89
+\T1/aer/m/n/12 den eje-cu-tar lo-cal-men-te (me-dian-te Olla-ma o si-mi-la-res) o a tra-v�s de APIs comerciales589007710703999\TS1/aer/m/n/12 �\T1/aer/m/n/12 L1016-
+ []
+
+
+
+
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+ [12]
+
+chapters/Cap_3.tex:105: Tesis.tex:105: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 ... información actual y contextualizada【
+                                                  916670030940373†L145-L15...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:105: Tesis.tex:105: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 ...ualizada【916670030940373†L145-L156】
+                                                  .  Existen numerosas varia...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:105: Tesis.tex:105: LaTeX Error: Unicode character 【 (U+3010)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 ...n ventajas y limitaciones específicas【
+                                                  149667013130509†L518-L53...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+chapters/Cap_3.tex:105: Tesis.tex:105: LaTeX Error: Unicode character 】 (U+3011)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.105 ...cíficas【149667013130509†L518-L538】
+                                                  .  Finalmente, se propone ...
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+) (chapters/Cap_4.tex
+
+
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+ [13]
 Cap\'{\i }tulo 5.
+) (chapters/conclusiones.tex
+
+
+Overfull \vbox (15.11194pt too high) has occurred while \output is active []
+
+ [14
+
+]
+Cap\'{\i }tulo 6.
 ) (Tesis.bbl
 
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
- [8
+ [15
 
 ])
 
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
- [9
+ [16
 
 ] (Tesis.aux
 LaTeX Info: Redefining \. on input line 6.
@@ -418,19 +1547,29 @@ LaTeX Info: Redefining \% on input line 6.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-03-26>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+Tesis.bbl:82: LaTeX Warning: There were undefined references.
+
+
+Tesis.bbl:82: LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4843 strings out of 469959
- 78213 string characters out of 5479904
- 475042 words of memory out of 5000000
- 31496 multiletter control sequences out of 15000+600000
- 667884 words of font info for 99 fonts, out of 8000000 for 9000
+ 4873 strings out of 469959
+ 78414 string characters out of 5479904
+ 478770 words of memory out of 5000000
+ 31527 multiletter control sequences out of 15000+600000
+ 669069 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,12n,65p,835b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Tesis.pdf (17 pages, 157844 bytes).
+ 57i,12n,65p,1658b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\USER\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Tesis.pdf (24 pages, 196617 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
+ 152 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

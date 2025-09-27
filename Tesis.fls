@@ -1,6 +1,6 @@
-PWD g:\Mark\UCSP\2025-2\PFC-II\paper\Tesis_CS_202203
+PWD g:\Mark\UCSP\2025-2\PFC-II\paper\tesis_2025
 INPUT C:\Users\USER\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT g:\Mark\UCSP\2025-2\PFC-II\paper\Tesis_CS_202203\Tesis.tex
+INPUT g:\Mark\UCSP\2025-2\PFC-II\paper\tesis_2025\Tesis.tex
 OUTPUT Tesis.log
 INPUT C:\Program Files\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\book.cls
@@ -85,9 +85,6 @@ INPUT C:\Users\USER\AppData\Roaming\MiKTeX\tex\latex\ae\t1aer.fd
 INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\tfm\public\ae\aer12.tfm
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT .\Tesis.aux
-INPUT .\Tesis.aux
-INPUT Tesis.aux
 OUTPUT Tesis.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -169,8 +166,6 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmbsy10.tfm
-INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\vf\public\ae\aeb10.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
 INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\vf\public\ae\aer12.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmu10.tfm
 INPUT .\frontmatter\Resumen.tex
@@ -183,22 +178,13 @@ INPUT .\frontmatter\Abstract.tex
 INPUT .\frontmatter\Abstract.tex
 INPUT .\frontmatter\Abstract.tex
 INPUT frontmatter\Abstract.tex
-INPUT .\Tesis.toc
-INPUT .\Tesis.toc
-INPUT Tesis.toc
 OUTPUT Tesis.toc
 INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\tfm\public\ae\aecsc10.tfm
 INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\vf\public\ae\aecsc10.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
-INPUT .\Tesis.lot
-INPUT .\Tesis.lot
-INPUT Tesis.lot
 OUTPUT Tesis.lot
-INPUT .\Tesis.lof
-INPUT .\Tesis.lof
-INPUT Tesis.lof
 OUTPUT Tesis.lof
 INPUT .\chapters\Cap_1.tex
 INPUT .\chapters\Cap_1.tex
@@ -207,6 +193,8 @@ INPUT .\chapters\Cap_1.tex
 INPUT chapters\Cap_1.tex
 INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\tfm\public\ae\aer17.tfm
 INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\tfm\public\ae\aeb10.tfm
+INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\vf\public\ae\aeb10.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
 INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\vf\public\ae\aeb10.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmb10.tfm
 INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\tfm\public\ae\aer12.tfm
@@ -223,6 +211,14 @@ INPUT .\chapters\Cap_3.tex
 INPUT .\chapters\Cap_3.tex
 INPUT .\chapters\Cap_3.tex
 INPUT chapters\Cap_3.tex
+INPUT C:\Program Files\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
+INPUT C:\Users\USER\AppData\Roaming\MiKTeX\tex\latex\ae\t1aett.fd
+INPUT C:\Users\USER\AppData\Roaming\MiKTeX\tex\latex\ae\t1aett.fd
+INPUT C:\Users\USER\AppData\Roaming\MiKTeX\tex\latex\ae\t1aett.fd
+INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\tfm\public\ae\aett12.tfm
+INPUT C:\Users\USER\AppData\Roaming\MiKTeX\fonts\vf\public\ae\aett12.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmib10.tfm
 INPUT .\chapters\Cap_4.tex
 INPUT .\chapters\Cap_4.tex
 INPUT .\chapters\Cap_4.tex
@@ -237,6 +233,8 @@ INPUT .\Tesis.bbl
 INPUT .\Tesis.bbl
 INPUT Tesis.bbl
 INPUT Tesis.aux
+INPUT C:\Users\USER\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT C:\Users\USER\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmb10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmb10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
@@ -253,3 +251,5 @@ INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
