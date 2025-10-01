@@ -1,147 +1,158 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.9.30)  30 SEP 2025 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.22)  1 OCT 2025 05:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/mark/Documentos/Codes/tesis_2025/Tesis.tex
-(/home/mark/Documentos/Codes/tesis_2025/Tesis.tex
-LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-01-21> (/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+**g:/Mark/UCSP/2025-2/PFC-II/paper/tesis_2025/Tesis.tex
+(g:/Mark/UCSP/2025-2/PFC-II/paper/tesis_2025/Tesis.tex
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-03-26>
+(C:\Program Files\MiKTeX\tex/latex/base\book.cls
+Document Class: book 2024/06/29 v1.4n Standard LaTeX document class
+(C:\Program Files\MiKTeX\tex/latex/base\bk12.clo
+File: bk12.clo 2024/06/29 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count185
-\c@chapter=\count186
-\c@section=\count187
-\c@subsection=\count188
-\c@subsubsection=\count189
-\c@paragraph=\count190
-\c@subparagraph=\count191
-\c@figure=\count192
-\c@table=\count193
-\abovecaptionskip=\skip47
-\belowcaptionskip=\skip48
-\bibindent=\dimen138
-) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks16
-\inpenc@posthook=\toks17
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+\c@part=\count197
+\c@chapter=\count198
+\c@section=\count199
+\c@subsection=\count266
+\c@subsubsection=\count267
+\c@paragraph=\count268
+\c@subparagraph=\count269
+\c@figure=\count270
+\c@table=\count271
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen146
+) (C:\Program Files\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks18
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+ (C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks19
+) (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 107.
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen139
-\Gin@req@width=\dimen140
-) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2022/01/26 3.70 The Babel package
-\babel@savecnt=\count194
-\U@D=\dimen141
-\l@unhyphenated=\language87
- (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+) (C:\Program Files\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2025/03/27 v25.6 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
+\babel@savecnt=\count272
+\U@D=\dimen149
+\l@unhyphenated=\language79
+ (C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count195
- (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+\bbl@dirlevel=\count273
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/babel-spanish\spanish.ldf
 Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
-\es@quottoks=\toks19
-\es@quotdepth=\count196
+\es@quottoks=\toks20
+\es@quotdepth=\count274
 Package babel Info: Making " an active character on input line 570.
-)) (./sty/fancyhdr.sty
-\headwidth=\dimen142
-) (/usr/share/texlive/texmf-dist/tex/latex/ae/ae.sty
+)) (C:\Program Files\MiKTeX\tex/generic/babel/locale/es\babel-spanish.tex
+Package babel Info: Importing font and identification data for spanish
+(babel)             from babel-es.ini. Reported on input line 11.
+) (sty/fancyhdr.sty
+\headwidth=\dimen150
+) (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/ae\ae.sty
 Package: ae 2001/02/12 1.3 Almost European Computer Modern
- (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+ (C:\Program Files\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-)) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+)) (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
+ (C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+ (C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count197
-\Gm@cntv=\count198
-\c@Gm@tempcnt=\count199
-\Gm@bindingoffset=\dimen143
-\Gm@wd@mp=\dimen144
-\Gm@odd@mp=\dimen145
-\Gm@even@mp=\dimen146
-\Gm@layoutwidth=\dimen147
-\Gm@layoutheight=\dimen148
-\Gm@layouthoffset=\dimen149
-\Gm@layoutvoffset=\dimen150
-\Gm@dimlist=\toks20
-) (/usr/share/texlive/texmf-dist/tex/latex/acronym/acronym.sty
-Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
- (/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
+\Gm@cnth=\count275
+\Gm@cntv=\count276
+\c@Gm@tempcnt=\count277
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks21
+ (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/acronym\acronym.sty
+Package: acronym 2025/01/17 v1.50 Support for acronyms (Tobias Oetiker)
+ (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/bigfoot\suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
-) (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count266
-\decimalpart=\count267
+) (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/xstring\xstring.sty (C:\Users\USER\AppData\Roaming\MiKTeX\tex/generic/xstring\xstring.tex
+\xs_counta=\count278
+\xs_countb=\count279
 )
-Package: xstring 2021/07/21 v1.84 String manipulations (CT)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
 )
-\AC@clearlist=\toks21
-) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+\AC@clearlist=\toks22
+) (C:\Program Files\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (./sty/hlundef.sty
+) (sty/hlundef.sty
 
 LaTeX Warning: You have requested package `sty/hlundef',
                but the package provides `hlundef'.
 
 Package: hlundef 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
-Package: color 2021/12/07 v1.3c Standard LaTeX Color (DPC)
- (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(C:\Program Files\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2024/06/23 v1.3e Standard LaTeX Color (DPC)
+ (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
-)) (./sty/tesis.sty
-\approval=\skip49
-) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-) (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+ (C:\Program Files\MiKTeX\tex/latex/graphics\mathcolor.ltx))) (sty/tesis.sty
+\approval=\skip51
+) (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/setspace\setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/booktabs\booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen151
-\lightrulewidth=\dimen152
-\cmidrulewidth=\dimen153
-\belowrulesep=\dimen154
-\belowbottomsep=\dimen155
-\aboverulesep=\dimen156
-\abovetopsep=\dimen157
-\cmidrulesep=\dimen158
-\cmidrulekern=\dimen159
-\defaultaddspace=\dimen160
-\@cmidla=\count268
-\@cmidlb=\count269
-\@aboverulesep=\dimen161
-\@belowrulesep=\dimen162
-\@thisruleclass=\count270
-\@lastruleclass=\count271
-\@thisrulewidth=\dimen163
+\heavyrulewidth=\dimen159
+\lightrulewidth=\dimen160
+\cmidrulewidth=\dimen161
+\belowrulesep=\dimen162
+\belowbottomsep=\dimen163
+\aboverulesep=\dimen164
+\abovetopsep=\dimen165
+\cmidrulesep=\dimen166
+\cmidrulekern=\dimen167
+\defaultaddspace=\dimen168
+\@cmidla=\count280
+\@cmidlb=\count281
+\@aboverulesep=\dimen169
+\@belowrulesep=\dimen170
+\@thisruleclass=\count282
+\@lastruleclass=\count283
+\@thisrulewidth=\dimen171
 )
 LaTeX Font Info:    Trying to load font information for T1+aer on input line 37.
- (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aer.fd
+ (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/ae\t1aer.fd
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
-) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count272
-\l__pdf_internal_box=\box50
-) (./Tesis.aux
+) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2025-03-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count284
+) (Tesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported  on input line 6.
 
 
 LaTeX Warning: Label `chap:proposal' multiply defined.
@@ -163,24 +174,24 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
- (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count273
-\scratchdimen=\dimen164
-\scratchbox=\box51
-\nofMPsegments=\count274
-\nofMParguments=\count275
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count276
-\MPscratchDim=\dimen165
-\MPnumerator=\count277
-\makeMPintoPDFobject=\count278
-\everyMPtoPDFconversion=\toks23
-) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count285
+\scratchdimen=\dimen172
+\scratchbox=\box53
+\nofMPsegments=\count286
+\nofMParguments=\count287
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count288
+\MPscratchDim=\dimen173
+\MPnumerator=\count289
+\makeMPintoPDFobject=\count290
+\everyMPtoPDFconversion=\toks24
+) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+ (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Info: Redefining \. on input line 37.
 LaTeX Info: Redefining \% on input line 37.
@@ -220,7 +231,7 @@ LaTeX Info: Redefining \% on input line 37.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Trying to load font information for T1+aess on input line 40.
-(/usr/share/texlive/texmf-dist/tex/latex/ae/t1aess.fd
+(C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/ae\t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
 <figs/UCSP_black.pdf, id=1, 345.79117pt x 141.92834pt>
@@ -236,33 +247,46 @@ LaTeX Font Info:    Font shape `T1/aess/b/n' in size <14.4> not available
 (Font)              Font shape `T1/aess/bx/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/aess/b/n' in size <17.28> not available
 (Font)              Font shape `T1/aess/bx/n' tried instead on input line 40.
- [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./figs/UCSP_black.pdf>]
+
+[1
+
+{C:/Users/USER/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figs/UCSP_black.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 40.
- [2] (./frontmatter/abreviaturas.tex) (./frontmatter/Agradecimientos.tex
+
+
+[2] (frontmatter/abreviaturas.tex) (frontmatter/Agradecimientos.tex
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [3
 
-] [4
+]
 
-]) (./frontmatter/Resumen.tex [5
+[4
+
+]) (frontmatter/Resumen.tex
+
+[5
 
 
-]) (./frontmatter/Abstract.tex [6
+]) (frontmatter/Abstract.tex
+
+[6
 
 
-]) (./Tesis.toc
+]) (Tesis.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
 Underfull \vbox (badness 2573) has occurred while \output is active []
+
 
 
 
@@ -286,6 +310,7 @@ LaTeX Font Warning: Font shape `T1/aer/m/scsl' undefined
 
 
 
+
 LaTeX Font Warning: Font shape `T1/aer/m/scsl' undefined
 (Font)              using `T1/aer/m/sc' instead on input line 58.
 
@@ -297,12 +322,13 @@ Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 LaTeX Font Warning: Font shape `T1/aer/m/scsl' undefined
 (Font)              using `T1/aer/m/sc' instead on input line 58.
 
-[2] (./Tesis.lot
+[2] (Tesis.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lot=\write4
 \openout4 = `Tesis.lot'.
+
 
 
 
@@ -319,14 +345,16 @@ LaTeX Font Warning: Font shape `T1/aer/m/scsl' undefined
 
 [3
 
-] (./Tesis.lof
+] (Tesis.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write5
 \openout5 = `Tesis.lof'.
 
- (./chapters/Cap_1.tex
+ (chapters/Cap_1.tex
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [1
@@ -339,11 +367,15 @@ although it is yet undefined on input line 3.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [2
 
-]) (./chapters/Cap_2.tex
+]) (chapters/Cap_2.tex
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [3]
@@ -354,15 +386,21 @@ Overfull \hbox (54.83739pt too wide) in paragraph at lines 10--11
  []
 
 
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [4
 
-]) (./chapters/Cap_3.tex
+]) (chapters/Cap_3.tex
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [5]
 Cap\'{\i }tulo 3.
+
+
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
@@ -389,6 +427,8 @@ LaTeX Font Warning: Font shape `TS1/aer/m/n' undefined
 line:24:
 
 Tesis.tex:24: LaTeX Warning: Citation `singlestore2025tutorial' on page 7 undefined on input line 24.
+
+
 
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
@@ -420,11 +460,13 @@ line:39:
 Tesis.tex:39: LaTeX Warning: Citation `sharma2025survey' on page 8 undefined on input line 39.
 
 
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [8]
 LaTeX Font Info:    Trying to load font information for T1+aett on input line 44.
- (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
+ (C:\Users\USER\AppData\Roaming\MiKTeX\tex/latex/ae\t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 line:52:
@@ -439,10 +481,14 @@ Tesis.tex:52: LaTeX Warning: Citation `langcopilot2025guide' on page 9 undefined
 Underfull \vbox (badness 1314) has occurred while \output is active []
 
 
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [9]
 Underfull \vbox (badness 2165) has occurred while \output is active []
+
+
 
 
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
@@ -456,37 +502,54 @@ Overfull \hbox (23.27682pt too wide) in paragraph at lines 80--81
 Underfull \vbox (badness 2245) has occurred while \output is active []
 
 
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [11]
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
- [12]) (./chapters/Cap_4.tex
+ [12]) (chapters/Cap_4.tex
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [13]
 Cap\'{\i }tulo 5.
-) (./chapters/conclusiones.tex
+) (chapters/conclusiones.tex
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [14
 
 ]
 Cap\'{\i }tulo 6.
-) (./Tesis.bbl
+) (Tesis.bbl
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [15
 
 ])
+
+
 Overfull \vbox (15.11194pt too high) has occurred while \output is active []
 
  [16
 
-] (./Tesis.aux
+] (Tesis.aux
 LaTeX Info: Redefining \. on input line 6.
 LaTeX Info: Redefining \% on input line 6.
 )
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-03-26>
+ ***********
+
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -498,18 +561,17 @@ Tesis.bbl:82: LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4682 strings out of 478287
- 73852 string characters out of 5849289
- 390001 words of memory out of 5000000
- 22745 multiletter control sequences out of 15000+600000
- 511503 words of font info for 91 fonts, out of 8000000 for 9000
+ 4883 strings out of 469959
+ 78738 string characters out of 5479904
+ 479082 words of memory out of 5000000
+ 31529 multiletter control sequences out of 15000+600000
+ 669069 words of font info for 103 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,62p,1633b,629s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmb10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Tesis.pdf (25 pages, 191467 bytes).
+ 57i,13n,65p,1638b,620s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\USER\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmb10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Tesis.pdf (25 pages, 198806 bytes).
 PDF statistics:
- 160 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
