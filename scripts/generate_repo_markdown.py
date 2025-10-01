@@ -15,6 +15,8 @@ import sys
 from pathlib import Path
 from typing import Dict, Iterable, List
 
+# (no diagnostics) -- keep behavior minimal for production use
+
 
 def get_repo_root(script_path: Path) -> Path:
     """Return the repository root, falling back to the script directory."""
@@ -41,9 +43,24 @@ def gather_repo_files(root: Path) -> List[Path]:
     raw_paths = [line.strip() for line in output.decode().splitlines() if line.strip()]
     resolved = []
     missing = []
+    # load .gitignore patterns so we can filter out files that should be ignored
+    patterns = load_gitignore_patterns(root)
     for p in raw_paths:
         full = root / p
         if full.exists():
+            # if the path matches a .gitignore pattern, skip it (user prefers ignored files omitted)
+            try:
+                if path_matches_gitignore(full, root, patterns):
+                    continue
+            except Exception:
+                pass
+            # explicit rule: skip any files in sty/ or with .sty extension (user requested)
+            try:
+                rel = full.relative_to(root).as_posix()
+                if rel.startswith("sty/") or full.suffix == ".sty":
+                    continue
+            except Exception:
+                pass
             resolved.append(full)
         else:
             missing.append(p)
@@ -69,16 +86,54 @@ def load_gitignore_patterns(root: Path) -> List[str]:
     patterns: List[str] = []
     gitignore = root / ".gitignore"
     if not gitignore.exists():
+        sys.stderr.write(f"load_gitignore_patterns: .gitignore not found at {gitignore}\n")
         return patterns
     try:
-        for line in gitignore.read_text(encoding="utf-8").splitlines():
+        text = gitignore.read_text(encoding="utf-8")
+        sys.stderr.write(f"load_gitignore_patterns: read .gitignore ({len(text)} bytes) at {gitignore}\n")
+        for line in text.splitlines():
             s = line.strip()
             if not s or s.startswith("#"):
                 continue
             patterns.append(s)
+        sys.stderr.write(f"load_gitignore_patterns: extracted patterns: {patterns}\n")
     except Exception:
         pass
     return patterns
+
+
+def path_matches_gitignore(path: Path, root: Path, patterns: List[str]) -> bool:
+    """Return True if the given path matches any simple .gitignore pattern.
+
+    Supports directory patterns ending with '/', simple globs with '*', and
+    direct filename patterns like '*.sty'. This is a conservative matcher and
+    does not implement the full .gitignore spec (no negations, no nested
+    .gitignore handling) which is sufficient for this project's needs.
+    """
+    if not patterns:
+        return False
+    try:
+        rel = path.relative_to(root).as_posix()
+    except Exception:
+        rel = path.as_posix()
+    from fnmatch import fnmatch
+
+    for pat in patterns:
+        # directory pattern
+        if pat.endswith("/"):
+            p = pat.rstrip("/")
+            if rel == p or rel.startswith(p + "/"):
+                return True
+            continue
+        # wildcard or glob
+        if "*" in pat or "?" in pat or (pat.count("*") > 0):
+            if fnmatch(rel, pat) or fnmatch(path.name, pat):
+                return True
+            continue
+        # explicit filename or path
+        if rel == pat or path.name == pat:
+            return True
+    return False
 
 
 def gather_files_by_walk(root: Path) -> List[Path]:
@@ -180,6 +235,9 @@ def create_markdown(root: Path, files: List[Path], output_path: Path) -> str:
     files_for_tree = list(files)
     if ci.exists() and ci not in files_for_tree:
         files_for_tree = files_for_tree + [ci]
+    # Exclude the generator script itself from the tree and content
+    gen_script = (root / "scripts" / "generate_repo_markdown.py").resolve()
+    files_for_tree = [f for f in files_for_tree if f.resolve() != gen_script]
     # Exclude the output file itself from both lists
     files_for_tree = [f for f in files_for_tree if f.resolve() != output_path.resolve()]
     # For content, exclude the copilot instructions file explicitly
@@ -189,6 +247,7 @@ def create_markdown(root: Path, files: List[Path], output_path: Path) -> str:
     tree_lines.extend(render_tree(tree))
     tree_lines.append("```")
     tree_lines.append("")
+    # No diagnostics in final output
 
     content_sections: List[str] = ["## Contenido de archivos", ""]
     for file_path in sorted(files_for_content):

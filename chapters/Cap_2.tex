@@ -1,43 +1,47 @@
-\chapter{Nombre del Capítulo II (Usualmente Marco Teórico)}\label{chap:background}
+\chapter{Marco Teórico}
+\label{chap:background}
 
-Cada capítulo deberá contener una breve introducción que describe en forma rápida el contenido del
-mismo. En este capítulo va el marco teórico. (pueden ser dos capítulos de marco teórico)
+\noindent
+En este capítulo se presenta el marco teórico que sustenta el desarrollo de la tesis. Se revisan los orígenes y la evolución de la Generación Aumentada por Recuperación (RAG), su relación con los modelos de lenguaje grandes (LLMs) y su consolidación como paradigma para integrar datos externos en las tareas de generación. Además, se abordan las variantes más recientes, como las implementaciones como servicio (RAGaaS) y las arquitecturas offline, así como los desafíos de privacidad, robustez y evaluación que caracterizan al estado del arte.
 
-\section{Sección 1 del Capítulo II}
+\section{Modelos de lenguaje y limitaciones}
 
-Un capítulo puede contener $n$ secciones. 
+Los modelos de lenguaje grandes han revolucionado el procesamiento del lenguaje natural gracias a su capacidad para modelar distribuciones complejas de texto. Sin embargo, al depender exclusivamente de conocimiento paramétrico, los LLMs sufren de alucinaciones y carecen de mecanismos para incorporar información nueva o privada. Esta limitación motivó el desarrollo de técnicas que integran memoria no paramétrica, como las arquitecturas de búsqueda y recuperación \cite{Lewis2020RAG,Guu2020REALM}.
 
-Con respecto a las referencias bibliográficas, se hace de la siguiente manera \cite{Mateos00}, se debe de redactar el texto de forma tal que si se retiraran las referencias, la redacción no debe perjudicarse. Por ejemplo 
+\section{Generación Aumentada por Recuperación (RAG)}
 
-\subsubsection{Localización y Mapeo Simultaneos SLAM puramente topológico}
-Se puede hacer un sistema SLAM con sólo reconocimiento de lugares, generando un SLAM topológico con representación basada en grafos \cite{Choset_2001}. Se almacena un registro de lugares visitados y cómo se llega de uno a otro (conexiones) sin tener información geométrica explícita.
+\subsection{Definición y arquitectura básica}
 
-Este tipo de SLAM es más adecuado para planificación y navegación. La figura \ref{Fig:SLAMTopological} ilustra este tipo de SLAM 
-    
-\begin{figure}[ht]
-\centering
-% placeholder figure (original content omitted in template)
-\fbox{\parbox[c][4cm][c]{8cm}{\centering SLAM puramente topológico (figura de ejemplo)}}
-\caption{SLAM puramente topológico basado en grafos}
-\label{Fig:SLAMTopological}
-\end{figure}
+La Generación Aumentada por Recuperación combina un componente de \emph{retrieval} (recuperación) con un modelo generativo. El sistema indexa una colección de documentos en un espacio vectorial, formula una consulta a partir del \emph{prompt} del usuario y recupera los fragmentos más relevantes. Estos fragmentos se concatenan al \emph{prompt} y sirven de contexto adicional para que el LLM genere respuestas fundamentadas. La arquitectura original de RAG \cite{Lewis2020RAG} demostró que este enfoque reduce las alucinaciones y permite actualizar el conocimiento sin reentrenar el modelo.
 
+\subsection{Variantes y mejoras recientes}
 
-\subsection{Sub Sección}
-
-Una sección puede contener $n$ sub secciones.\cite{Galante01}
-
-\subsubsection{Sub sub sección}
-
-Una sub sección puede contener n sub sub secciones.
-
-\section{Recomendaciones generales de escritura}
-Un trabajo de esta naturaleza debe tener en consideración varios aspectos generales:
+Desde su introducción, RAG ha evolucionado en varias líneas de investigación:
 
 \begin{itemize}
-\item Ir de lo genérico a lo específico. Siempre hay que considerar que el lector podría ser alguien no muy familiar con el tema
-	y la lectura debe serle atractiva.
-\item No redactar frases muy largas. Si las frases tienen más de 2 líneas continuas es probable que la lectura sea dificultosa.
+  \item \textbf{Mejoras en el recuperador:} optimización de la búsqueda mediante reescritura de consultas (RQ‑RAG) \cite{Chan2024RQ-RAG}, recuperación jerárquica (LevelRAG) \cite{Zhang2025LevelRAG} o exploración multi‑salto (HopRAG) \cite{Wang2025HopRAG}. Otras propuestas incorporan reordenamiento y filtrado de contexto para descartar fragmentos irrelevantes \cite{Wang2023FILCO}.
+  \item \textbf{Mejoras en el generador:} bucles de auto‑reflexión donde el modelo critica y corrige sus respuestas (Self‑RAG) \cite{Asai2023SelfRAG}, memorias internas para reutilizar salidas previas (SelfMem) \cite{Cheng2023SelfMem} y compresión de contexto para preguntas multi‑hop (BRIEF) \cite{Li2025BRIEF}.
+  \item \textbf{Arquitecturas híbridas:} modelos como IM‑RAG \cite{Yang2024IM-RAG}, CoRAG \cite{Wang2025CoRAG} y SIM‑RAG \cite{Yang2025SIM-RAG} realizan múltiples rondas de recuperación y generación, permitiendo consultas de seguimiento y decisiones dinámicas sobre cuándo detener la búsqueda.
+  \item \textbf{Robustez y seguridad:} RAAT aplica entrenamiento adversarial para manejar ruido en la recuperación \cite{Fang2024RAAT}. RA‑RAG estima la fiabilidad de las fuentes y combina documentos mediante votación ponderada \cite{Hwang2025RARAG}. Otros trabajos analizan la sensibilidad del sistema a perturbaciones en las consultas \cite{Percin2025RobustnessQuery} y proponen fine‑tuning robusto frente a defectos de recuperación (RbFT) \cite{Tu2025RbFT}.
+  \item \textbf{RAG multimodal y con grafos:} la integración de imágenes, tablas y videos se aborda en mRAG \cite{Drushchak2025mRAG}, mientras que GraphRAG explora grafos de conocimiento para representar relaciones complejas \cite{Han2025GraphRAG}.
 \end{itemize}
 
-Cada capítulo excepto el primero debe contener, al finalizar, una sección de consideraciones que enlacen el presente capítulo con el siguiente.
+\section{RAG como Servicio (RAGaaS)}
+
+El modelo RAG‑como‑Servicio ofrece pipelines de recuperación y generación alojados en la nube. Este enfoque democratiza la adopción, pero introduce desafíos de privacidad: las consultas pueden contener información sensible y el proveedor del servicio controla la base de conocimiento. RemoteRAG formaliza el servicio RAG con preservación de privacidad y propone perturbar los embeddings de las consultas mediante un esquema de privacidad diferencial \cite{Cheng2025RemoteRAG}. Otro aspecto crítico es la protección de los derechos de autor en bases de conocimiento compartidas; AQUA inserta marcas de agua semánticas en imágenes para rastrear su uso indebido \cite{Chen2025AQUA}. Finalmente, el marco \emph{Securing RAG} analiza los principales vectores de ataque (inversión de embeddings, inyección de prompts, contaminación de datos) y ofrece directrices para mitigar riesgos en despliegues de RAGaaS \cite{Ammann2025SecuringRAG}.
+
+\section{RAG offline y despliegues locales}
+
+Para sectores que exigen confidencialidad absoluta y control de los datos, se requieren implementaciones de RAG completamente locales. Estos sistemas combinan LLMs de código abierto desplegados en servidores o computadoras personales con índices vectoriales locales (FAISS, ChromaDB) que almacenan los embeddings de los documentos. La evaluación de \cite{Tyndall2025OfflineRAG} muestra que ejecutar RAG en hardware solo CPU es factible para preguntas factuales, aunque las tareas de sumarización presentan mayor latencia y variabilidad. Guías prácticas destacan la importancia de cuantizar los modelos y optimizar recursos para mantener el rendimiento.
+
+\section{Evaluación y métricas}
+
+Evaluar un sistema RAG requiere medir tanto la relevancia de la recuperación como la fidelidad de la generación. Las encuestas recientes proponen métricas que combinan exactitud de recuperación con exactitud factual y trazabilidad de las respuestas \cite{Gan2025RAGEvaluationSurvey,Yu2024RAGEvalSurvey}. Herramientas como RAGAS permiten estimar qué parte de la respuesta está sustentada en la evidencia recuperada. Otros estudios comparan RAG con LLMs de contexto largo y muestran que RAG sigue siendo más eficiente y preciso al filtrar información irrelevante \cite{Li2024LCvsRAG}.
+
+\section{Estado del arte y tendencias}
+
+Las tendencias actuales incluyen la recuperación jerárquica y multi‑hop \cite{Zhang2025LevelRAG,Wang2025HopRAG}, la compresión de contexto \cite{Li2025BRIEF}, la adaptación al dominio mediante auto‑entrenamiento \cite{Xu2024SimRAGDomain}, la robustez para modelos pequeños \cite{Liu2025RoseRAG} y el uso de grafos para razonamiento estructurado \cite{Han2025GraphRAG}. Asimismo, la privacidad y la seguridad se han convertido en ejes transversales, con propuestas como RemoteRAG y AQUA para proteger consultas y datos \cite{Cheng2025RemoteRAG,Chen2025AQUA}.
+
+\section{Consideraciones finales}
+
+La investigación en RAG ha avanzado rápidamente, proponiendo soluciones para mejorar la recuperación, la generación y la robustez del sistema. Sin embargo, subsisten retos relacionados con la seguridad, la privacidad y la adaptación a diferentes dominios. Las variantes offline y RAGaaS representan extremos complementarios que ilustran el compromiso entre confidencialidad y escalabilidad. El próximo capítulo presenta la propuesta \emph{Atenex}, un framework que busca conciliar estos requerimientos mediante una arquitectura modular, mecanismos de protección de consultas y gestión multi‑usuario.
