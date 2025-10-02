@@ -3,8 +3,6 @@
 % Se sugiere usar Jabref para gestionor sus referencias (obtener los datos correctos a partir de ISBN/ISSN o DOI)
 % Se recomienda que el identificador sea Authoy_Year o Authoryear para facilidad de ver cita en el texto TeX
 
-
-
 @article{Li2024LCvsRAG,
   title={Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach},
   author={Li, Zhuowan and Li, Cheng and Zhang, Mingyang and Mei, Qiaozhu and Bendersky, Michael},
@@ -235,12 +233,28 @@
   url={https://arxiv.org/pdf/2504.02273.pdf}
 }
 
+@article{Drushchak2025mRAG,
+  title={Multimodal Retrieval-Augmented Generation: Unified Information Processing Across Text, Image, Table, and Video Modalities},
+  author={Drushchak, Nazarii and Polyakovska, Nataliya and Bautina, Maryna and others},
+  journal={Proceedings of the 1st Workshop on Multimodal Augmented Generation via Multimodal Retrieval (MAGMaR 2025)},
+  year={2025},
+  url={https://arxiv.org/pdf/2503.18016.pdf}
+}
+
 @article{Han2025GraphRAG,
   title={Retrieval-Augmented Generation with Graphs (GraphRAG)},
   author={Han, Haoyu and Wang, Yu and Shomer, Harry and others},
   journal={arXiv preprint arXiv:2501.00309},
   year={2025},
   url={https://arxiv.org/pdf/2501.00309.pdf}
+}
+
+@article{Cheng2025RemoteRAG,
+  title={RemoteRAG: A Privacy-Preserving LLM Cloud RAG Service},
+  author={Cheng, Yihang and Zhang, Lan and Wang, Junyang and Yuan, Mu and Yao, Yunhao},
+  journal={Findings of the Association for Computational Linguistics: ACL 2025},
+  year={2025},
+  url={https://aclanthology.org/2025.findings-acl.197.pdf}
 }
 
 @article{Chen2025AQUA,
@@ -259,6 +273,39 @@
   url={https://arxiv.org/pdf/2505.08728.pdf}
 }
 
+@article{Tyndall2025OfflineRAG,
+  title={Feasibility Evaluation of Secure Offline Large Language Models with Retrieval-Augmented Generation for CPU-Only Inference},
+  author={Tyndall, Erick and Wagner, Torrey and Gayheart, Colleen and Some, Alexandre and Langhals, Brent},
+  journal={Information},
+  year={2025},
+  url={https://www.mdpi.com/2078-2489/16/9/744}
+}
+
+@article{Gan2025RAGEvaluationSurvey,
+  title={Retrieval Augmented Generation Evaluation in the Era of Large Language Models: A Comprehensive Survey},
+  author={Gan, Aoran and Yu, Hao and Zhang, Kai and Liu, Qi and Yan, Wenyu and Huang, Zhenya and Tong, Shiwei and Chen, Enhong and Hu, Guoping},
+  journal={Frontiers of Computer Science},
+  year={2025},
+  note={in press},
+  url={https://arxiv.org/pdf/2504.14891.pdf}
+}
+
+@article{Yu2024RAGEvalSurvey,
+  title={Evaluation of Retrieval-Augmented Generation: A Survey},
+  author={Yu, Hao and Gan, Aoran and Zhang, Kai and Tong, Shiwei and Liu, Qi and Liu, Zhaofeng},
+  journal={arXiv preprint arXiv:2405.07437},
+  year={2024},
+  url={https://arxiv.org/pdf/2405.07437.pdf}
+}
+
+@article{Li2024LCvsRAG,
+  title={Retrieval Augmented Generation or Long-Context LLMs? A Comprehensive Study and Hybrid Approach},
+  author={Li, Zhuowan and Li, Cheng and Zhang, Mingyang and Mei, Qiaozhu and Bendersky, Michael},
+  journal={Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing: Industry Track},
+  year={2024},
+  url={https://arxiv.org/pdf/2404.13604.pdf}
+}
+
 @article{Xu2024SimRAGDomain,
   title={SimRAG: Self-Improving Retrieval-Augmented Generation for Domain Adaptation},
   author={Xu, Zihan and others},
@@ -274,4 +321,3 @@
   year={2025},
   url={https://aclanthology.org/2025.findings-acl.676.pdf}
 }
-

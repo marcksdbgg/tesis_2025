@@ -3,11 +3,15 @@
 
 \documentclass[a4paper,openany,12pt]{book}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{graphicx}
 \usepackage[spanish,mexico]{babel}
 % custom style files are in the project's sty/ folder
 \usepackage{sty/fancyhdr}
-\usepackage{ae}
+% Commented out 'ae' (virtual fonts) which can interact poorly with UTF-8 and T1 encoding.
+% If you need it for PDF aesthetics, re-enable after verifying encoding.
+% \usepackage{ae}
 \usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=2cm]{geometry}
 \usepackage[printonlyused]{acronym}
 \usepackage{xspace}

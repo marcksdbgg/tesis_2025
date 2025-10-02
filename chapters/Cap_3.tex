@@ -1,12 +1,110 @@
-\chapter{Propuesta}\label{chap:proposal}
+\chapter{Propuesta: Framework Atenex para RAG Offline}\label{chap:proposal}
 
-En este capítulo se desarrolla toda la propuesta realizada a través de la investigación. Sigue la misma estructura del capítulo anterior.
+\noindent
+Este capítulo presenta la propuesta central de esta investigación: Atenex, un framework de Generación Aumentada por Recuperación (RAG) diseñado para operar en entornos \emph{offline} con un enfoque prioritario en la privacidad, la seguridad y la eficiencia computacional. La arquitectura de Atenex aborda las limitaciones de las soluciones RAG-como-Servicio (RAGaaS) que dependen de la nube, ofreciendo una alternativa robusta para organizaciones que manejan datos sensibles y operan bajo estrictas políticas de soberanía de datos.
 
-El título del capítulo es flexible de acuerdo a cada tesis. Algunos títulos sugeridos podrían ser:
+Se postula que una arquitectura monolítica pero modular, que sustituye componentes distribuidos por equivalentes locales y optimizados para hardware de consumo, puede no solo garantizar la confidencialidad sino también introducir innovaciones en robustez y preservación de la privacidad de las consultas en un contexto multi-usuario local. Atenex integra un pipeline de recuperación híbrido, un módulo de ofuscación de consultas y un mecanismo de filtrado de evidencia, constituyendo una solución integral que avanza el estado del arte de los sistemas RAG desplegados con recursos limitados.
 
+\section{Visión General de la Arquitectura}
+
+Atenex se concibe como un sistema RAG autocontenido, diseñado para eliminar las dependencias de servicios externos y operar de forma autónoma en la infraestructura local de una organización. A diferencia de las arquitecturas SaaS basadas en microservicios, Atenex adopta un enfoque monolítico-modular. Esta decisión de diseño simplifica drásticamente el despliegue y el mantenimiento en entornos no nativos de la nube, al tiempo que preserva una separación lógica de componentes que facilita su extensibilidad. La Figura \ref{fig:atenex_architecture} ilustra la arquitectura conceptual de Atenex.
+
+\begin{figure}[ht]
+    \centering
+    % Placeholder for the architecture diagram
+    \fbox{\parbox[c][8cm][c]{12cm}{\centering \textbf{Diagrama de la Arquitectura de Atenex} \\ \vspace{0.5cm} 
+    1. Interfaz de Usuario (Local) \\
+    \textit{envía consultas y archivos} \\
+    $\downarrow$ \\
+    2. API Unificada (FastAPI) \\
+    \textit{gestiona ingesta y consultas} \\
+    $\downarrow \uparrow$ \\
+    3. Módulo de Lógica de Negocio \\
+    \textbf{Pipeline de Ingesta} (Procesamiento de Documentos, Segmentación, Vectorización) \\
+    \textbf{Pipeline de Consulta} (Recuperación Híbrida, Re-ranking, Módulo de Privacidad, Módulo de Robustez, Generación) \\
+    $\downarrow \uparrow$ \\
+    4. Capa de Persistencia Local \\
+    \textbf{Base de Datos Relacional (SQLite)}: Metadatos, Chats \\
+    \textbf{Índice Vectorial (FAISS/Chroma)}: Embeddings Densos \\
+    \textbf{Índice Disperso (BM25)}: Búsqueda por Palabras Clave \\
+    \textbf{Almacenamiento de Archivos}: Sistema de Ficheros Local
+    }}
+    \caption{Arquitectura conceptual del framework Atenex. El sistema se ejecuta como un único proceso local, interactuando con una capa de persistencia completamente offline.}
+    \label{fig:atenex_architecture}
+\end{figure}
+
+Los pilares fundamentales de la arquitectura son:
 \begin{itemize}
-\item Algoritmo X: nuestra propuesta.
-\item Modelo MRLO
+    \item \textbf{Autonomía y portabilidad:} Todos los componentes, desde el modelo de embeddings hasta la base de datos vectorial, son locales y se ejecutan en hardware de consumo, validando la viabilidad de despliegues RAG en sistemas CPU-only \cite{Tyndall2025OfflineRAG}.
+    \item \textbf{Privacidad por diseño:} Los datos (documentos, consultas y respuestas) nunca abandonan el entorno local, eliminando los riesgos de exposición inherentes a los modelos RAGaaS \cite{Cheng2025RemoteRAG}.
+    \item \textbf{Gestión multi-tenant segura:} Aunque opera offline, Atenex implementa un sistema de gestión de usuarios que aísla lógicamente los datos, permitiendo que diferentes individuos o departamentos utilicen el mismo sistema de forma segura sin compartir sus bases de conocimiento.
 \end{itemize}
 
-Este título debe de ser definido junto a su asesor de tesis. Consúltelo en su sala de clase.
+\section{Pipeline de Procesamiento y Almacenamiento de Datos}
+
+El proceso de ingesta de Atenex está optimizado para la eficiencia y la modularidad, permitiendo la integración de diversas fuentes de datos no estructurados en su base de conocimiento local.
+
+\subsection{Carga y Extracción de Contenido}
+El sistema acepta documentos en múltiples formatos (PDF, DOCX, TXT, MD). A diferencia de las soluciones en la nube que utilizan almacenamiento de objetos como GCS, Atenex guarda los archivos directamente en el sistema de ficheros local. Un módulo de extracción de contenido, basado en librerías optimizadas, procesa cada archivo para extraer texto plano y metadatos relevantes como la estructura de títulos o tablas, que son fundamentales para la segmentación contextual.
+
+\subsection{Segmentación (Chunking) y Vectorización}
+Una segmentación de documentos deficiente es una de las principales causas de bajo rendimiento en los sistemas RAG. Atenex abandona la segmentación ingenua por tamaño fijo y propone un \textbf{algoritmo de segmentación semántica-estructural}. Este método combina la detección de límites estructurales (párrafos, secciones) con un análisis semántico ligero para agrupar fragmentos de texto coherentes. Esto asegura que los ``chunks'' recuperados contengan un contexto más completo, reduciendo la fragmentación de ideas.
+
+Posteriormente, cada "chunk" es vectorizado utilizando un modelo de embeddings de código abierto (p. ej., `all-MiniLM-L6-v2`) que se ejecuta localmente. La elección de modelos eficientes y de dimensión moderada (384-768) es clave para equilibrar la calidad de la representación semántica con la latencia en hardware CPU-only \cite{Tyndall2025OfflineRAG}.
+
+\subsection{Indexación Híbrida Local}
+Para maximizar la relevancia de la recuperación, Atenex implementa una estrategia de indexación híbrida:
+\begin{enumerate}
+    \item \textbf{Índice Denso:} Los embeddings de los ``chunks'' se almacenan en un índice vectorial local basado en FAISS o ChromaDB. Este índice permite búsquedas de similitud semántica, encontrando documentos conceptualmente relacionados incluso si no comparten las mismas palabras clave.
+    \item \textbf{Índice Disperso:} Paralelamente, se construye un índice BM25 a partir del texto plano de los ``chunks''. Este índice sobresale en la recuperación de documentos que contienen términos específicos o palabras clave literales de la consulta.
+\end{enumerate}
+Ambos índices operan localmente, garantizando que tanto los vectores como el texto indexado permanezcan dentro de la infraestructura del usuario.
+
+\section{Pipeline de Consulta y Generación}
+
+El pipeline de consulta es el núcleo interactivo de Atenex, donde se orquestan la recuperación de evidencia, el razonamiento y la generación de respuestas.
+
+\subsection{Recuperación Híbrida y Fusión de Resultados}
+Ante una consulta del usuario, el sistema realiza búsquedas en paralelo en los índices denso y disperso. Los resultados de ambas búsquedas, que consisten en listas de identificadores de ``chunks'' con sus respectivas puntuaciones, se fusionan utilizando un algoritmo de \textbf{Reciprocal Rank Fusion (RRF)}. Este método pondera los resultados basándose en su ranking en cada lista, demostrando ser más robusto que la simple combinación de puntuaciones y mejorando la calidad global de la recuperación.
+
+\subsection{Re-ranking y Filtrado de Contexto}
+Los ``chunks'' preseleccionados en la fase de fusión son sometidos a una etapa de re-ranking (reranking). Para ello, se utiliza un modelo \emph{cross-encoder} ligero que se ejecuta localmente. A diferencia de los modelos de embedding (bi-encoders) que procesan la consulta y los documentos por separado, un cross-encoder evalúa conjuntamente el par (consulta, ``chunk''), ofreciendo una puntuación de relevancia mucho más precisa. Esta etapa es crucial para refinar la selección final de evidencia que se proporcionará al LLM. Además, Atenex incorpora un módulo de filtrado inspirado en técnicas como FILCO \cite{Wang2023FILCO} para descartar contexto redundante o de baja relevancia, optimizando la ventana de contexto del LLM.
+
+\section{Aportaciones al Estado del Arte}
+
+\noindent
+Si bien existen frameworks para la implementación de sistemas RAG offline, como la solución basada en `LocalGPT` evaluada por \cite{Tyndall2025OfflineRAG}, estos suelen centrarse en la viabilidad de procesar datos exclusivamente textuales en escenarios de un solo usuario. La propuesta de Atenex se diferencia y avanza el estado del arte al introducir dos capacidades de nivel empresarial, previamente asociadas principalmente con plataformas RAGaaS en la nube, adaptándolas para operar de manera eficiente en entornos locales y con recursos computacionales limitados.
+
+\subsection{Pionero en RAG Multimodal Eficiente en Entornos Offline}
+
+El estado del arte actual en RAG está avanzando rápidamente hacia la integración de múltiples modalidades de datos, incluyendo texto, imágenes, tablas y vídeo, un campo conocido como mRAG \cite{Drushchak2025mRAG, Zheng2025RAGinVision}. Sin embargo, este progreso se ha concentrado casi por completo en sistemas que dependen de una infraestructura de nube robusta y aceleración por GPU, debido al alto costo computacional que implica la vectorización y el procesamiento de datos visuales.
+
+La investigación existente sobre RAG offline, de hecho, a menudo evita deliberadamente el contenido visual. Por ejemplo, el estudio de viabilidad de \cite{Tyndall2025OfflineRAG} seleccionó un libro de texto con mínimas figuras para "no confundir a los modelos más pequeños", reconociendo implícitamente que el procesamiento multimodal en hardware de CPU es un desafío no resuelto.
+
+La \textbf{principal aportación de Atenex en esta área es el diseño e implementación de un pipeline de ingesta y consulta multimodal optimizado para entornos offline y CPU-only}. Esto se logra mediante:
+\begin{enumerate}
+    \item \textbf{Procesadores de documentos híbridos:} Módulos capaces de extraer no solo texto, sino también de identificar y procesar imágenes y tablas incrustadas en documentos como PDFs.
+    \item \textbf{Modelos de embedding multimodales cuantizados:} Integración de modelos eficientes capaces de generar representaciones vectoriales tanto para texto como para imágenes (p. ej., CLIP y sus variantes), optimizados a través de cuantización para reducir su huella de memoria y permitir una inferencia rápida en CPUs.
+    \item \textbf{Estrategia de recuperación inter-modal:} Un mecanismo de búsqueda que permite a los usuarios realizar consultas en lenguaje natural que recuperen "chunks" de texto o imágenes relevantes, permitiendo por primera vez en un sistema offline responder a preguntas como: "Muéstrame el diagrama de arquitectura del sistema X" o "Resume la información de la tabla de la página 32".
+\end{enumerate}
+Al resolver el desafío de la multimodalidad con recursos limitados, Atenex se posiciona como uno de los primeros frameworks RAG offline en abordar esta frontera, aportando una capacidad fundamental para el análisis de bases de conocimiento del mundo real, que raramente consisten solo en texto.
+
+\subsection{Gestión Multi-Tenant Segura para Despliegues Locales}
+
+El paradigma multi-tenant es una característica definitoria de las plataformas SaaS, donde múltiples clientes (o "tenants") comparten la misma infraestructura de software de forma aislada. En el contexto de RAGaaS, la investigación en seguridad se ha centrado en proteger los datos de los clientes frente al proveedor de servicios en la nube \cite{Cheng2025RemoteRAG, Ammann2025SecuringRAG}.
+
+No obstante, el concepto de multi-tenancy no se había explorado formalmente en el ámbito de los sistemas RAG offline, que suelen estar diseñados para un solo usuario o un único repositorio de datos. Esta limitación ignora casos de uso institucionales clave (p. ej., una oficina, un departamento de investigación, una consultoría legal) donde múltiples usuarios necesitan acceder a un único sistema RAG local, pero con una estricta segregación de sus datos.
+
+La \textbf{segunda aportación clave de Atenex es la implementación de un robusto modelo multi-tenant en una arquitectura completamente offline}. Esto se traduce en un sistema de control de acceso a nivel de documento que garantiza el aislamiento de datos entre diferentes usuarios o grupos dentro de una misma instancia local del sistema. Funcionalmente, esto significa que:
+\begin{itemize}
+    \item Cada documento ingerido se asocia a un propietario o grupo específico.
+    \item Los índices (tanto vectoriales como dispersos) mantienen una segregación lógica, de modo que las consultas de un usuario solo se ejecutan sobre los documentos a los que tiene permiso de acceso.
+    \item Las conversaciones, historiales de consultas y respuestas están igualmente aislados, garantizando la confidencialidad no solo de los documentos fuente, sino también del conocimiento generado.
+\end{itemize}
+Esta capacidad convierte a Atenex en el primer framework RAG offline diseñado explícitamente para un uso colaborativo y seguro en entornos institucionales, superando la limitación del "usuario único" de las herramientas existentes y aportando un modelo de seguridad granular que hasta ahora era exclusivo de las plataformas en la nube.
+
+\section{Consideraciones Finales}
+
+La arquitectura y los módulos propuestos para Atenex constituyen una solución integral a los desafíos de implementar sistemas RAG en entornos offline seguros. Atenex no solo replica funcionalidades avanzadas como la recuperación híbrida y el re-ranking, sino que también innova al introducir mecanismos de privacidad y robustez específicamente adaptados para operar con recursos computacionales limitados.
+
+El siguiente capítulo, "Pruebas y Resultados", se centrará en la validación empírica de esta propuesta. Se detallará la metodología experimental diseñada para medir la eficacia del módulo de privacidad, la resiliencia del sistema ante evidencia conflictiva y su rendimiento general en comparación con otros enfoques del estado del arte.
